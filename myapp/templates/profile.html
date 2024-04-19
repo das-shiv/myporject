@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Welcome to your profile, {{ request.user.username }}!</h1>
+    <p><a href="{% url 'logout' %}">Logout</a></p>
+</body>
+</html>
+
