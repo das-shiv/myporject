@@ -1,3 +1,28 @@
-__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-*.pem
+# Virtual environment
+venv/
+
+# Django database
+db.sqlite3
+
+# Logs
+*.log
+
+# Static and media files
+static/
+media/
+
+# Environment files
+.env
+.env.local
+
+# Secret key file (if using a separate file)
+settings_secret.py
+
+# Django migrations
+myapp/migrations/
