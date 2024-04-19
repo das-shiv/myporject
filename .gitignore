@@ -13,9 +13,6 @@ db.sqlite3
 # Logs
 *.log
 
-# Static and media files
-static/
-media/
 
 # Environment files
 .env
