@@ -26,3 +26,8 @@ settings_secret.py
 
 # Django migrations
 myapp/migrations/
+
+
+#security keys
+
+*.pem
