@@ -24,7 +24,7 @@ pipeline {
         stage('Delete Old Docker Image') {
                 steps {
                     script {
-                        sh "docker rmi ssdocs/myproject:${env.BUILD_NUMBER}"
+                        sh "docker rmi --force ssdocs/myproject:${env.BUILD_NUMBER}"
                     }
                 }
             }
