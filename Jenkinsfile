@@ -25,6 +25,7 @@ pipeline {
                 steps {
                     script {
                         sh "docker rmi --force registry.hub.docker.com/ssdocs/myproject:${env.BUILD_NUMBER}"
+                        sh "docker rmi --force ssdocs/myproject:${env.BUILD_NUMBER}"
                 }
                     }
                 }
