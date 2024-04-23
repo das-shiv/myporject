@@ -20,6 +20,14 @@ pipeline {
                     }
                 }
             }
+            stage('Delete Old Docker Image') {
+            steps {
+                script {
+                    sh 'docker rmi ssdocs/myproject:${env.BUILD_NUMBER'
+                }
+            }
+        }
+
         }
     }
 }
