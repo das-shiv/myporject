@@ -21,10 +21,11 @@ pipeline {
                 }
             }
         }
-        stage('Delete Old Docker Image') {
+        stage('Delete the docker image from local machine') {
                 steps {
                     script {
-                        sh "docker rmi --force ssdocs/myproject:${env.BUILD_NUMBER}"
+                        sh "docker rmi --force registry.hub.docker.com/ssdocs/myproject:${env.BUILD_NUMBER}"
+                }
                     }
                 }
             }
