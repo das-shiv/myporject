@@ -9,7 +9,6 @@ pipeline {
                 }
             }
         }
-        
         stage('Push to Docker Hub') {
             environment {
                 DOCKERHUB_CREDENTIALS = credentials('docker')
@@ -21,7 +20,6 @@ pipeline {
                     }
                 }
             }
-            
             stage('Delete Old Docker Image') {
                 steps {
                     script {
