@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'ssdocs') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker') {
                         docker.image("ssdocs/myproject:${env.BUILD_NUMBER}").push()
                     }
                 }
